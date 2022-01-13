@@ -11,8 +11,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(express.urlencoded({ extended:  true}));
-//const urlParser = express.urlencoded({ extended:  true})
-const jsonParser = express.json();
+app.use(express.json());
 
 
 //serve GET: static pages - index.html, page1.html, page2.html
