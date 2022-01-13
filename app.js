@@ -12,7 +12,7 @@ require('dotenv').config();
 const app = express();
 app.use(express.urlencoded({ extended:  true}));
 app.use(express.json());
-
+//test comment
 
 //serve GET: static pages - index.html, page1.html, page2.html
 app.use(express.static(path.join(__dirname, 'public')));
